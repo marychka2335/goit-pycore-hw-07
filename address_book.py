@@ -14,7 +14,6 @@ class AddressBook(UserDict):
     def find(self, name):
         record = self.data.get(name, None)
         if record is None:
-            raise KeyError(f"Record with name '{name}' is not found.")
         return record
 
     def delete(self, name):
