@@ -13,7 +13,6 @@ class AddressBook(UserDict):
 
     def find(self, name):
         record = self.data.get(name, None)
-        if record is None:
         return record
 
     def delete(self, name):
